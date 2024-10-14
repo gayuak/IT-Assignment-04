@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.container {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row-reverse;
+  animation: slider 24s ease 0s infinite;
+  transform: translateX(-300vw);
+}
+div {
+  width: 25%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div:nth-of-type(1) {
+  background-image: url(/assest/images/case5/image_01.jpg);
+}
+div:nth-of-type(2) {
+  background-image: url(/assest/images/case5/image_02.jpg);
+}
+div:nth-of-type(3) {
+  background-image: url(/assest/images/case5/image_03.jpg);
+}
+div:nth-of-type(4) {
+  background-image: url(/assest/images/case5/image_04.jpg);
+}
+@keyframes slider {
+  0% {
+    transform: translateX(-300vw);
+  }
+  10% {
+    transform: translateX(-300vw);
+  }
+  14% {
+    transform: translateX(-200vw);
+  }
+  27% {
+    transform: translateX(-200vw);
+  }
+  31% {
+    transform: translateX(-100vw);
+  }
+  43% {
+    transform: translateX(-100vw);
+  }
+  48% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  64% {
+    transform: translateX(-100vw);
+  }
+  77% {
+    transform: translateX(-100vw);
+  }
+  81% {
+    transform: translateX(-200vw);
+  }
+  93% {
+    transform: translateX(-200vw);
+  }
+  98% {
+    transform: translateX(-300vw);
+  }
+}
